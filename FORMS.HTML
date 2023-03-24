@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+  </head>
+  <body>
+    <h1>FORMS</h1>
+
+    <form action="/TACOS">
+      <p>
+        <label for="username">ENTER YOUR USERNAME</label>
+        <input
+          type="text"
+          placeholder="This is a text input"
+          id="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">ENTER YOUR PASSWORD</label>
+        <input
+          type="password"
+          placeholder="This is a password input"
+          id="password"
+        />
+      </p>
+      <p>
+        <label for="number">ENTER YOUR NUMBER</label>
+        <input type="number" placeholder="This is a number input" id="number" />
+      </p>
+
+      <input type="color" />
+      <input type="time" />
+      <input type="date" />
+      <br />
+      <button type="button">YO IM A BUTTON</button>
+      <button>YO IM A BUTTON BUT I DONT WORK</button>
+    </form>
+
+    <hr />
+
+    <h2>MORE INPUTS</h2>
+    <form action="\abcdef">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">YESSIR!!!!!</label>
+      <button>SUBMIT</button>
+
+      <!-- RADIO BUTTONS -->
+      <p>
+        <label for="xs">XS</label>
+        <input type="radio" name="size" id="xs" value="xtra small" />
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s" value="small" />
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m" value="medium" />
+        <button>SUBMIT</button>
+      </p>
+
+      <!-- SELECT -->
+      <p>
+        <label for="">SELECT AN ENTREE</label>
+        <select name="meal" id="meal">
+          <option value="fish">FISH</option>
+          <option value="veg" selected>VEGETERIAN</option>
+          <option value="steak">STEAK</option>
+        </select>
+        <button>select</button>
+      </p>
+
+      <!-- RANGE -->
+      <p>
+        <label for="cheese">CHEESE</label>
+        <input
+          type="range"
+          id="cheese"
+          min="5"
+          max="10"
+          step="4"
+          name="CHEESE_LEVEL"
+        />
+        <button>SUBMIT</button>
+      </p>
+
+      <!-- TEXT AREA -->
+      <p>
+        <label for="req">REQUESTS?</label>
+        <br />
+        <textarea name="req" id="req" cols="30" rows="10"></textarea>
+        <button>SUBMIT</button>
+      </p>
+
+      <!-- VALIDATIONS -->
+      <p>
+        <label for="NAME">TEXT</label>
+        <input type="text" name="NAME" id="NAME" required />
+        <label for="Username">Username</label>
+        <input
+          type="text"
+          name="Username"
+          id="Username"
+          required
+          minlength="5"
+          maxlength="15"
+        />
+        <button>SUBMIT</button>
+      </p>
+    </form> 
+  </body>
+</html>
